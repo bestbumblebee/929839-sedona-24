@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Новиков](https://up.htmlacademy.ru/htmlcss/24/user/929839).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
