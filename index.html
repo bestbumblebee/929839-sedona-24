@@ -33,27 +33,38 @@
 	 	<h2 class="main-hotel-search-title"></h2>
 	 	<b>Заинтересовались?</b>
 	 	<p class="main-hotel-search-specify">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-	 	<ul class="main-hotel-search-list-date">
-	 		<li class="main-hotel-search-arrival">
-	 	 		<p>Дата заезда</p>
-	 	 		<!-- Здесь будет форма -->
-	 	 	</li>
-	 	 	<li class="main-hotel-search-departure">
-	 	 		<p>Дата выезда</p>
-	 	 		<!-- Здесь будет форма -->
-	 	 	</li>
-	 	</ul>
-	 	<ul class="main-hotel-search-list-age">
-	 		<li class="main-hotel-search-adult">
-	 			<p>взрослые</p>
-	 			<!-- Здесь будет форма -->
-	 		</li>
-	 		<li class="main-hotel-search-child">
-	 			<p>дети</p>
-	 			<!-- Здесь будет форма -->
-	 		</li>
-	 	</ul>
-	 	<p class="button-form">Найти</p>
+	 	  <form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
+	 	  	<p>
+	 	  		<label for="arrival-date">Дата Заезда</label>
+	 	  		<input type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2017">
+	 	  	</p>
+	 	  	<p>
+	 	  		<label for="date-of-departure">Дата Выезда</label>
+	 	  		<input type="text" name="date-of-departure" id="date-of-departure" value="4 Июля 2017">
+	 	  	</p>
+	 	  	<p>
+	 	  		<p>Взрослые</p>
+	 	  		<button type="button">-</button>
+	 	  		<input type="text" name="numeral" value="2">
+	 	  		<button type="button">+</button>
+
+	 	  	</p>
+	 	  	<p>
+	 	  		<p>Дети</p>
+	 	  		<button type="button">-</button>
+	 	  		<input type="text" name="numeral" value="0">
+	 	  		<button type="button">+</button>
+
+	 	  	</p>
+	 	  	<button type="submit" class="button">Найти</button>
+	 	  </form>
+
+	 	  <section class="appointment">
+	 	  	<h2 class="visually-hidden">Карта</h2>
+        	<img src="img/jpg/map.jpg" width="1200" height="593" alt="еографическое расположение Седоны">
+        	
+        </section>
+
 	 </section>
 	 <footer class="main-footer">
 	 	<p class="main-footer-visit">#VISITSEDONA</p>
@@ -68,6 +79,7 @@
         	<img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"> 
          </a>
         </p>
+
 	 	
 	 </footer>
 
