@@ -75,6 +75,7 @@ text-decoration: none;
 
 .modal-button {
 	font: inherit;
+	text-transform: uppercase;
 	min-height: 67px;
 	min-width: 570px;
 	font-size: 21px;
@@ -101,7 +102,8 @@ text-decoration: none;
 
 
 .hotel-search p {
-	font-size: 21px;
+	font: inherit;
+	text-transform: uppercase;
     line-height: 26px;
     font-weight: 700;
 }
@@ -109,6 +111,8 @@ text-decoration: none;
 .hotel-search input {
 	font: inherit;
 	text-transform: uppercase;
+	line-height: 26px;
+    font-weight: 700;
 	border: none;
 	background-color: #f2f2f2;
 
@@ -203,7 +207,7 @@ text-decoration: none;
 	list-style: none;
 }
 
-.catalog-hotels-reservation h3 a {
+.directory-header a {
 	font: inherit;
 	text-transform: uppercase;
 	font-size: 21px;
@@ -212,12 +216,12 @@ text-decoration: none;
     color: #000000;
 }
 
-.catalog-hotels-reservation h3 a:hover {
+.directory-header a:hover {
 	color: #81b3d2;
 }
 
-.catalog-hotels-reservation h3 a:active,
-.catalog-hotels-reservation h3 a:focus {
+.directory-header a:active,
+.directory-header a:focus {
 	color: #cacaca;
 }
 
