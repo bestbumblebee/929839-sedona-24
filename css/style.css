@@ -21,9 +21,11 @@ body {
 	box-sizing: inherit; 
 }
 
+/* стили для блоков макросетки */
+
   body > * {
   	border: 2px solid red;
-  	background-color: rgba(0,255,255,0.5);
+  	
 
   }
 
@@ -91,12 +93,15 @@ text-decoration: none;
 
 .main-presetation {
 	min-height: 510px;
+	text-align: center;
+	padding-top: 77px; 
  	background-image: url("../img/jpg/index-bac-photo.jpg");
  	background-repeat: no-repeat;
 
 }
 
 .main-presetation img {
+	
 	
 }
 
@@ -243,7 +248,10 @@ text-decoration: none;
 }
 
 .main-footer {
+	display: flex;
 	min-height: 121px;
+	justify-content: space-between;
+
 }
 
 .main-footer-visit {
@@ -252,10 +260,6 @@ text-decoration: none;
     font-weight: 700;
 }
 
-
-.main-footer ul {
-  text-align: center;
-}
 
 .main-footer ul {
   list-style: none;
@@ -307,6 +311,58 @@ text-decoration: none;
 
 .catalog-hotels {
 	min-height: 455px;
+}
+
+
+
+.catalog-hotels-reservation {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+  	padding: 0;
+    list-style: none;
+}
+
+.catalog-hotels-reservation-amara-resort {
+	border-top: 1px solid #e3e3e3;
+}
+
+.catalog-hotels-reservation-Desert-Queil-Inn {
+	border-top: 1px solid #e3e3e3;
+}
+
+.catalog-hotels-reservation-Villas-diablo {
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+
+
+
+.catalog-hotels-reservation-amara-resort,
+.catalog-hotels-reservation-Desert-Queil-Inn,
+.catalog-hotels-reservation-Villas-diablo {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* стили для блочков */
+.hotels-img,
+.hotels-info,
+.hotels-rating {
+	border: 2px dotted #3a6182;
+}
+
+.hotels-img {
+	margin-left: 73px;
+}
+
+.hotels-info {
+	margin-left: 30px;
+}
+
+.hotels-rating {
+	margin-left: auto;
 }
 
 a.button-more {
