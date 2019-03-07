@@ -44,6 +44,11 @@ body {
 
   }
 
+ body > * > * > * > * > * {
+  	border: 2px dotted blue;
+
+  }
+
  .site-wrapper {
   	width: 1200px;
   	margin: 0 auto;
@@ -54,14 +59,18 @@ a {
 text-decoration: none;
 }
 
+.main-header {
+	position: relative;
+}
+
 .main-header-logo {
  	position: absolute;
  	left: 50%;
+ 	margin-left: -72px;
  }
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
+  
   min-height: 50px;
   font-size: 14px;
   line-height: 26px;
@@ -71,10 +80,34 @@ text-decoration: none;
 }
 
 .site-navigation {
-  	list-style: none;
+	display: flex;
+	list-style: none;
   	margin: 0;
-  	padding: 0;
+  	padding: 20px 72px;
 }
+
+.site-navigation li {
+	width: 20%;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+	text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: auto;
+}
+
 
 .site-navigation a {
   	color: #000000;
@@ -92,18 +125,14 @@ text-decoration: none;
 
 
 .main-presetation {
-	min-height: 510px;
 	text-align: center;
 	padding-top: 77px; 
+	padding-bottom: 77px;
  	background-image: url("../img/jpg/index-bac-photo.jpg");
  	background-repeat: no-repeat;
 
 }
 
-.main-presetation img {
-	
-	
-}
 
 .main-reasons {
 	min-height: 217px;
@@ -244,7 +273,12 @@ text-decoration: none;
 }
 
 .appointment {
+	
 	min-height: 473px;
+}
+
+.appointment img {
+	max-width: 100%;
 }
 
 .main-footer {
@@ -260,6 +294,14 @@ text-decoration: none;
     font-weight: 700;
 }
 
+.footer-social-buttons {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+
+}
+
 
 .main-footer ul {
   list-style: none;
@@ -273,6 +315,16 @@ text-decoration: none;
 	line-height: 26px;
 	font-weight: 400;
 }
+
+.footer-copyright {
+	display: flex;
+	align-items: center;
+}
+
+
+/* Catalog */
+
+
 
 .inner-link-nav a {
 	color: #766357;
@@ -343,7 +395,7 @@ text-decoration: none;
 .catalog-hotels-reservation-Desert-Queil-Inn,
 .catalog-hotels-reservation-Villas-diablo {
 	display: flex;
-	justify-content: flex-start;
+	padding: 30px 72px;
 }
 
 /* стили для блочков */
@@ -353,17 +405,25 @@ text-decoration: none;
 	border: 2px dotted #3a6182;
 }
 
-.hotels-img {
-	margin-left: 73px;
+.hotels-info {
+	padding: 0;
+	margin-left: 30px;
 }
 
-.hotels-info {
-	margin-left: 30px;
+.hotels-img {
+	display: flex;
+	align-items: center;
 }
 
 .hotels-rating {
 	margin-left: auto;
 }
+
+h3.directory-header {
+	margin-top: 0;
+	text-align: left;
+}
+
 
 a.button-more {
 	font: inherit;
