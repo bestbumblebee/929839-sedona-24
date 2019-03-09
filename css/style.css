@@ -149,10 +149,66 @@ text-decoration: none;
 	line-height: 26px;
 }
 
-.reasons {
-	min-height: 1100px;
+section.reasons {
+	display: flex;
+	flex-direction: column;
 	background-color: #ffffff;
 }
+
+.reason-one {
+	display: flex;
+}
+
+.reason-one-reason {
+	background-color: #81b3d2;
+	color: white;
+	text-align: center;
+}
+
+.reason-one-reason p:nth-child(1),
+.reason-one-reason p:nth-child(3) {
+	font-size: 21px;
+    font-weight: 700;
+    
+}
+
+
+.general-reasons {
+	display: flex;
+	margin: 0;
+  	padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.general-reasons p:nth-child(1) {
+	font-size: 21px;
+    font-weight: 700;
+ }
+
+.reason-two {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.last-reasons {
+	display: flex;
+	text-align: center;
+}
+
+.last-reasons div {
+	flex-grow: 1;
+}
+
+.last-reasons p:nth-child(1) {
+	font-size: 21px;
+    font-weight: 700;
+}
+
+
+
+
+/*form */
 
 .main-hotel-search {
 	min-height: 292px;
