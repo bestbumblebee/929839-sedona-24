@@ -413,9 +413,46 @@ section.reasons {
 }
 
 .sorting {
+	display: flex;
 	min-height: 86px;
 	background-color: #ffffff;
 }
+
+.found {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	width: 125px;
+	text-align: center;
+	margin-left: 72px;
+}
+
+.by-price {
+	margin-left: 38px;
+}
+
+.type,
+.rated {
+	margin-left: 34px;
+}
+
+
+
+.sorting-links {
+	display: flex;
+	align-items: center;
+	width: 420px;
+	margin-left: 49px;
+}
+
+.scroll-links {
+	margin-left: auto;
+	width: 37px;
+	margin-right: 72px;
+}
+
+
+/* hotels*/
 
 .catalog-hotels {
 	min-height: 455px;
@@ -467,8 +504,8 @@ section.reasons {
 }
 
 .hotels-img {
-	display: flex;
-	align-items: center;
+	padding-top: 4px;
+	
 }
 
 .hotels-rating {
