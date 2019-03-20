@@ -18,8 +18,8 @@
 			<ul class="site-navigation">
 				<li><a href="info.html">информация</a></li>
 				<li><a href="photo-and-video.html">фото и видео</a></li>
-				<li><a href="map-state.html">карта штата</a></li>
-				<li><a href="catalog.html">гостинницы</a></li>
+				<li><a href="map-state.html">Карта штата</a></li>
+				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -31,9 +31,9 @@
 	 </section>
 	 <section class="main-reasons">
 	 	<h2 class="visually-hidden">5 причин по которым Седона круче чем Гранд Каньон</h2>
-	 	<b class="first-b">Седона - небольшой городок в Аризоне,</b><br>
+	 	<b class="first-b">Седона — небольшой городок в Аризоне,</b><br>
 	 	<b>заслуживающий большего!</b>
-	 	<p class="main-reasons-text">Рассмотрим 5 причин, по кторым Седона круче, чем Гранд Каньон</p>
+	 	<p class="main-reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 	 </section>
 	 <section class="reasons">
 	 	<div class="reason-one">
@@ -46,7 +46,7 @@
 	 				там течет своя жизнь
 	 			</p>
 	 		</div>
-	 		<div>
+	 		<div class="index-picture">
 	 			<img src="img/jpg/1-img-index.jpg">
 	 		</div>
 	 	</div>
@@ -71,14 +71,14 @@
 	 		</li>
 	 	</ul>
 	 	<div class="reason-two">
-	 		<div>
+	 		<div class="index-picture">
 	 			<img src="img/jpg/2-img-index.jpg">
 	 		</div>
 	 		<div class="reason-one-reason">
 	 			<p>Там есть<br>
 	 				Мост дьявола
 	 			</p>
-				<p>- №2 -</p>
+				<p>— №2 —</p>
 				<p>Да, по нему можно пройти! Если конечно<br>
 					вы осмелитесь
 				</p>
@@ -88,7 +88,7 @@
 	 		<div>
 	 			<p>Небольшая<br>
 	 			площадь</p>
-	 			<p>- №3 -</p>
+	 			<p>— №3 —</p>
 	 			<p>Все достопримечательности<br>
 	 				находятся очень близко
 	 			</p>
@@ -96,7 +96,7 @@
 	 		<div>
 	 			<p>Красивая<br>
 	 			дорога</p>
-	 			<p>- №4 -</p>
+	 			<p>— №4 —</p>
 	 			<p>Ехать в Седону из Лас-Вегаса совсем<br>
 	 				не скучно!
 	 			</p>
@@ -104,7 +104,7 @@
 	 		<div>
 	 			<p>Мало<br>
 	 			туристов</p>
-	 			<p>- №5 -</p>
+	 			<p>— №5 —</p>
 	 			<p>Большинство едет в гранд каньон<br>
 	 				и толпится там
 	 			</p>
@@ -115,33 +115,38 @@
 	 <section class="main-hotel-search">
 	 	<h2 class="main-hotel-search-title"></h2>
 	 	<b>Заинтересовались?</b>
-	 	<p class="main-hotel-search-specify">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+	 	<p class="main-hotel-search-specify">Укажите предполагаемые даты поездки,<br>
+	 	и мы покажем вам лучшие предложения гостиниц в седоне</p>
 	 	<button class="modal-button" type="button">
-	 		Поиск гостинницы в седоне
+	 		Поиск гостиницы в седоне
 	 	</button>
 	 	  <form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
-	 	  	<p>
-	 	  		<label for="arrival-date">Дата Заезда</label>
+	 	  	<div class="arrival">
+	 	  		<label for="arrival-date">Дата заезда:</label>
 	 	  		<input type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2017">
-	 	  	</p>
-	 	  	<p>
-	 	  		<label for="date-of-departure">Дата Выезда</label>
+	 	  	</div>
+	 	  	<div class="departure">
+	 	  		<label for="date-of-departure">Дата выезда:</label>
 	 	  		<input type="text" name="date-of-departure" id="date-of-departure" value="4 Июля 2017">
-	 	  	</p>
-	 	  	<p>
+	 	  	</div>
+	 	  	<div class="choice">
+	 	  	<div class="adults">
 	 	  		<label for="numeral1">Взрослые</label>
-	 	  		<button type="button" class="button-main-form  button-main-form-minus">-</button>
-	 	  		<input type="text" name="numeral1" id="numeral1" value="2">
-	 	  		<button type="button" class="button-main-form  button-main-form-plus">+</button>
-
-	 	  	</p>
-	 	  	<p>
+	 	  		<div class="adults-choice">
+	 	  			<button type="button" class="button-main-form  button-main-form-minus">-</button>
+	 	  			<input type="text" name="numeral1" id="numeral1" value="2">
+	 	  			<button type="button" class="button-main-form  button-main-form-plus">+</button>
+	 	  		</div>
+	 	  	</div>
+	 	  	<div class="children">
 	 	  		<label for="numeral2">Дети</label>
-	 	  		<button type="button" class="button-main-form  button-main-form-minus">-</button>
-	 	  		<input type="text" name="numeral2" id="numeral2" value="0">
-	 	  		<button type="button" class="button-main-form  button-main-form-plus">+</button>
-
-	 	  	</p>
+	 	  		<div class="children-choice">
+	 	  			<button type="button" class="button-main-form  button-main-form-minus">-</button>
+	 	  			<input type="text" name="numeral2" id="numeral2" value="0">
+	 	  			<button type="button" class="button-main-form  button-main-form-plus">+</button>
+	 	  		</div>
+	 	  	</div>
+	 	  	</div>
 	 	  	<button type="submit" class="button-search">Найти</button>
 	 	  </form>
 	</section>
