@@ -55,6 +55,7 @@ body {
  .site-wrapper {
   	width: 1200px;
   	margin: 0 auto;
+  	box-shadow: 2px 4px 70px -12px rgba(0,0,0,0.75);
   }
 
 
@@ -253,12 +254,36 @@ input[type="radio"].visually-hidden {
  }
 
  p.icon-index-housing::before {
- 	content: "1";
+ 	content: "";
  	position: absolute;
  	width: 77px;
- 	height: 73px:;
+ 	height: 73px;
+ 	top: 60px;
+ 	left: 163px;
  	background-image: url("../img/svg/icon-1.svg");
- 	background-color: #000000;
+ 	background-repeat: no-repeat;
+ }
+
+ p.icon-index-food::before {
+ 	content: "";
+ 	position: absolute;
+ 	width: 77px;
+ 	height: 77px;
+ 	top: 61px;
+ 	left: 163px;
+ 	background-image: url("../img/svg/icon-3.svg");
+ 	background-repeat: no-repeat;
+ }
+
+ p.icon-index-souvenirs::before {
+ 	content: "";
+ 	position: absolute;
+ 	width: 77px;
+ 	height: 77px;
+ 	top: 56px;
+ 	left: 168px;
+ 	background-image: url("../img/svg/icon-2.svg");
+ 	background-repeat: no-repeat;
  }
 
 
@@ -452,7 +477,7 @@ input#numeral2 {
 	font: inherit;
 	text-transform: uppercase;
 	min-height: 60px;
-	min-width: 460px;
+	min-width: 458px;
 	font-size: 21px;
     line-height: 26px;
     color: #ffffff;
@@ -461,6 +486,10 @@ input#numeral2 {
     vertical-align: middle;
 	background-color: #81b3d2;
 	border: none;
+}
+
+button.button-search {
+	margin-top: 49px;
 }
 
 .button-search:hover {
