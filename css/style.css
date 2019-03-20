@@ -220,6 +220,7 @@ input[type="radio"].visually-hidden {
 .reason-one-reason p:nth-child(1) {
 	font-size: 21px;
     font-weight: 700;
+    margin-top: 25px;
 }
 
 .reason-one-reason p:nth-child(2) {
@@ -227,7 +228,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-one-reason p:nth-child(3) {
-	margin-top: 24px;
+	margin-top: 20px;
 }
 
 .general-reasons {
@@ -413,7 +414,7 @@ div.departure {
 div.choice {
 	display: flex;
 	align-items: center;
-	margin-top: 34px;
+	margin-top: 30px;
 }
 
 .adults,
@@ -434,6 +435,18 @@ input#numeral2 {
 	text-align: center;
 	width: 38px;
 	height: 38px;
+}
+
+div.children {
+	margin-left: auto;
+}
+
+.adults-choice {
+	margin-left: 45px;
+}
+
+.children label {
+	margin-right: 30px;
 }
 
 .button-main-form {
@@ -489,7 +502,7 @@ input#numeral2 {
 }
 
 button.button-search {
-	margin-top: 49px;
+	margin-top: 53px;
 }
 
 .button-search:hover {
@@ -511,10 +524,17 @@ button.button-search {
 	max-width: 100%;
 }
 
+
+/* footer */
+
 .main-footer {
 	display: flex;
-	min-height: 121px;
 	justify-content: space-between;
+	padding-top: 35px;
+	padding-left: 133px;
+	padding-bottom: 35px;
+	padding-right: 100px;
+
 
 }
 
@@ -550,6 +570,16 @@ button.button-search {
 	display: flex;
 	align-items: center;
 }
+
+.index-footer {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	background: rgba(234, 255, 45, 0.2);
+}
+
+
 
 
 /* Catalog */
