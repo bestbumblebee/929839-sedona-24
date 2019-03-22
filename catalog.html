@@ -28,38 +28,38 @@
 		<h1 class="visually-hidden">Каталог отелей Sedona</h1>
 		<section class="filter">
 			<form method="post" action="https://echo.htmlacademy.ru">
-				<fieldset>
+				<fieldset class="infrastructure">
 					<legend>Инфраструктура:</legend>
 					<ul>
 						<li>
-							<input type="checkbox" name="pool" id="pool-field" checked>
-							<label for="pool-field">Бассейн</label>
+							<input class="visually-hidden" type="checkbox" name="pool" id="pool-field" checked>
+							<label class="filter-transfer1 transfer1" for="pool-field">Бассейн</label>
 						</li>
 						<li>
-							<input type="checkbox" name="parking" id="parking-field">
-							<label for="parking-field">Парковка</label>
+							<input class="visually-hidden" type="checkbox" name="parking" id="parking-field">
+							<label class="filter-transfer1 transfer2" for="parking-field">Парковка</label>
 						</li>
 						<li>
-							<input type="checkbox" name="wifi" id="wifi-field">
-							<label for="wifi-field">WI-FI</label>
+							<input class="visually-hidden" type="checkbox" name="wifi" id="wifi-field">
+							<label class="filter-transfer1 transfer3" for="wifi-field">WI-FI</label>
 						</li>
 					</ul>
 
 				</fieldset>
-				<fieldset>
+				<fieldset class="type-of-housing">
 					<legend>Тип жилья:</legend>
 					<ul>
 						<li>
-							<input type="checkbox" name="hotel" id="hotel-field" checked>
-							<label for="hotel-field">Гостиница</label>
+							<input class="visually-hidden" type="checkbox" name="hotel" id="hotel-field" checked>
+							<label class="filter-transfer2 transfer1" for="hotel-field">Гостиница</label>
 						</li>
 						<li>
-							<input type="checkbox" name="motel" id="motel-field" checked>
-							<label for="motel-field">Мотель</label>
+							<input class="visually-hidden" type="checkbox" name="motel" id="motel-field" checked>
+							<label class="filter-transfer2 transfer2" for="motel-field">Мотель</label>
 						</li>
 						<li>
-							<input type="checkbox" name="apartments" id="apartments-field" checked>
-							<label for="apartments-field">Апартаменты</label>
+							<input class="visually-hidden" type="checkbox" name="apartments" id="apartments-field" checked>
+							<label class="filter-transfer2 transfer3" for="apartments-field">Апартаменты</label>
 						</li>
 					</ul>
 
@@ -93,11 +93,16 @@
 				<a class="type" href="#">По типу</a>
 				<a class="rated" href="#">По рейтингу</a>
 			</div>
-			<div class="scroll-links">
-				<a href="#"></a>
-				<a href="#"></a>
-			</div>
-			
+			<ul class="scroll-links">
+				<li><a class="up" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+				</a>
+				</li>
+				<li><a class="down" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+				</a>
+				</li>
+			</ul>
 		</section>
 
 
@@ -121,8 +126,15 @@
 						</p>
 					</div>
 					<div class="hotels-rating">
-						<span>Четыре звезды</span><br>
-						<span>Рейтинг</span>
+						<ul class="amara-resort-rating">
+							<span class="visually-hidden">Четыре звезды</span>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						
+						<span>Рейтинг: 8,5</span>
 					</div>
 				</li>
 			
