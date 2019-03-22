@@ -410,6 +410,11 @@ div.departure {
 	margin-top: 28px;
 }
 
+div.arrival,
+div.departure {
+	position: relative;
+}
+
 
 
 div.choice {
@@ -516,6 +521,37 @@ button.button-search {
 	color: #95b9d3;
 }
 
+.calendar {
+	position: absolute;
+	width: 22px;
+	height: 23px;
+}
+
+.calendar-up {
+	top: 7px;
+	right: 8px;
+}
+
+.calendar-down {
+	top: 7px;
+	right: 8px;
+}
+
+.calendar path {
+	fill: #a9a9a9;
+}
+
+.calendar:hover path {
+	fill: #000000;
+}
+
+.calendar:active path,
+.calendar:focus path {
+	fill: #81b3d2;
+}
+
+/* map */
+
 .appointment {
 	position: relative;
 	z-index: 0;
@@ -534,12 +570,13 @@ button.button-search {
 	padding-top: 35px;
 	padding-left: 133px;
 	padding-bottom: 35px;
-	padding-right: 100px;
+	padding-right: 86px;
 	width: 100%;
 	position: absolute;
 	z-index: 1;
 	bottom: 0;
 	background: rgba(255, 255, 255, 0.8);
+
 }
 
 .main-footer-visit {
@@ -592,21 +629,34 @@ button.button-search {
 .footer-copyright b {
 	line-height: 26px;
 	font-weight: 400;
-	margin-right: 8px;
-    margin-top: -9px;
+	margin-right: 7px;
+    margin-top: 4px;
 }
 
 .footer-copyright {
 	display: flex;
 	align-items: center;
+	width: 210px;
+	height: 43px;
 }
 
 .body-catalog .main-footer {
 	position: relative;
 }
 
+a.logo-htmlacademy-small {
+	display: inline-block;
+}
 
+.logo-htmlacademy-small {
+	width: 116px;
+	height: 42px;
+	margin-top: 7px;
+}
 
+.logo-htmlacademy-small:hover path {
+	fill: #81b3d2;
+}
 
 /* Catalog */
 
@@ -724,6 +774,11 @@ input:checked ~ .filter-transfer2::before {
 	left: -42px;
     top: -3px;
     background-position: center;
+}
+
+.filter-transfer1:disabled path,
+.filter-transfer2:disabled path {
+	fill: #6a6a6a;
 }
 
 
@@ -930,17 +985,33 @@ input:checked ~ .filter-transfer2::before {
 	margin-top: 4px;
 }
 
-.up path {
+.up path,
+.down path {
 	fill: #cacaca;
 }
 
-.down path {
-	fill: #81b3d2;
+.up:hover path,
+.down:hover path {
+	fill: #030303;
 }
 
 .scroll-links a {
 	display: inline-block;
 }
+
+.active-scroll path {
+	fill: #81b3d3;
+}
+
+.up:focus path,
+.up:active path,
+.down:focus path,
+.down:active path {
+	fill: #81b3d3;
+}
+
+
+
 
 /* hotels*/
 
