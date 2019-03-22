@@ -647,11 +647,92 @@ button.button-search {
 	display: flex;
 }
 
+.filter {
+	padding-top: 27px;
+	padding-bottom: 22px;
+	padding-left: 60px;
+	padding-right: 72px;
+}
+
+.infrastructure,
+.type-of-housing {
+	border: none;
+}
+
+.infrastructure ul,
+.type-of-housing ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.infrastructure legend,
+.type-of-housing legend {
+	font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    
+}
+
+.type-of-housing {
+	margin-left: 93px;
+}
+
+.filter-transfer1,
+.filter-transfer2 {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	color: #ffffff;
+	margin-left: 40px;
+	margin-top: 21px;
+}
+
+
+.filter-transfer1.transfer2,
+.filter-transfer2.transfer2 {
+	margin-top: 24px;
+}
+
+.filter-transfer1.transfer3,
+.filter-transfer2.transfer3 {
+	margin-top: 25px;
+}
+
+.filter-transfer2 {
+	margin-left: 43px;
+}
+
+.filter-transfer1::before,
+.filter-transfer2::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 27px;
+	background-image: url("../img/svg/checkbox-off.svg");
+	background-repeat: no-repeat;
+	left: -44px;
+    top: -3px;
+    background-position: center;
+}
+
+input:checked ~ .filter-transfer1::before,
+input:checked ~ .filter-transfer2::before {
+	background-image: url("../img/svg/checkbox-on.svg");
+	background-repeat: no-repeat;
+	left: -42px;
+    top: -3px;
+    background-position: center;
+}
+
+
+
 /* filter */
 
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
+  margin-left: auto;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -702,7 +783,7 @@ button.button-search {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 140px;
   padding-left: 65px;
 }
 
@@ -789,45 +870,77 @@ button.button-search {
 
 .sorting {
 	display: flex;
-	min-height: 86px;
-	background-color: #ffffff;
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	width: 125px;
-	text-align: center;
-	margin-left: 72px;
+}
+
+
+.found p {
+	margin: 0;
+	display: inline-block;
+}
+
+.sorting-links {
+	display: flex;
+	align-items: center;
+	width: 354px;
+	margin-left: 49px;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-links p {
+	margin: 0;
+	margin-top: 4px;
 }
 
 .by-price {
 	margin-left: 38px;
+	margin-top: 4px;
 }
 
 .type,
 .rated {
 	margin-left: 34px;
+	color: #cacaca;
+	margin-top: 4px;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 
 
-.sorting-links {
-	display: flex;
-	align-items: center;
-	width: 420px;
-	margin-left: 49px;
-}
+
+
 
 .scroll-links {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 	margin-left: auto;
-	width: 37px;
-	margin-right: 72px;
+	width: 34px;
+	margin-top: 4px;
 }
 
+.up path {
+	fill: #cacaca;
+}
 
+.down path {
+	fill: #81b3d2;
+}
 
+.scroll-links a {
+	display: inline-block;
+}
 
 /* hotels*/
 
