@@ -658,6 +658,11 @@ a.logo-htmlacademy-small {
 	fill: #81b3d2;
 }
 
+.logo-htmlacademy-small:focus path,
+.logo-htmlacademy-small:active path {
+	fill: #bdbbbc;
+}
+
 /* Catalog */
 
 
