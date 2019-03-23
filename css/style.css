@@ -141,22 +141,25 @@ input[type="radio"].visually-hidden {
 .main-presetation {
 	position: relative;
 	text-align: center;
-	padding-top: 77px; 
+	padding-top: 74px; 
 	padding-bottom: 77px;
  	background-image: url("../img/jpg/index-bac-photo.jpg");
  	background-repeat: no-repeat;
+ 	height: 506px;
+ 	position: top;
 
 }
 
 .main-presetation img {
 	display: inline-block;
+	margin-top: 3px;
 }
 
 
 .main-presetation-mask {
 	position: absolute;
 	background-image: url("../img/svg/intro-mask.svg");
-	bottom: -1px;
+	bottom: -3px;
 	left: 0;
 	z-index: 1;
 	width: 100%;
@@ -170,7 +173,7 @@ input[type="radio"].visually-hidden {
 	
 	background-color: #ffffff;
 	text-align: center;
-	padding-top: 55px;
+	padding-top: 62px;
 	padding-bottom: 36px;
 	
 }
@@ -208,7 +211,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 23px;
 }
 
-.reason-one.reason-one-reason {
+.reason-one .reason-one-reason {
 	padding-top: 26px;
 }
 
