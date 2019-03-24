@@ -1,5 +1,6 @@
 html { 
-  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box; 
 }
 
 body {
@@ -18,7 +19,8 @@ body {
 }
 
 *, *::before, *::after { 
-	box-sizing: inherit; 
+	-webkit-box-sizing: inherit; 
+	        box-sizing: inherit; 
 }
 
 
@@ -26,7 +28,8 @@ body {
  .site-wrapper {
   	width: 1200px;
   	margin: 0 auto;
-  	box-shadow: 2px 4px 70px -12px rgba(0,0,0,0.75);
+  	-webkit-box-shadow: 2px 4px 70px -12px rgba(0,0,0,0.75);
+  	        box-shadow: 2px 4px 70px -12px rgba(0,0,0,0.75);
   	position: relative;
   }
 
@@ -53,7 +56,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -81,8 +86,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	list-style: none;
   	margin: 0;
   	padding: 12px 72px;
@@ -143,6 +151,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	padding-top: 74px; 
 	padding-bottom: 77px;
+	background-color: #46718e;
  	background-image: url("../img/jpg/index-bac-photo.jpg");
  	background-repeat: no-repeat;
  	height: 506px;
@@ -152,6 +161,7 @@ input[type="radio"].visually-hidden {
 
 .main-presetation img {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 3px;
 }
 
@@ -175,6 +185,8 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	padding-top: 62px;
 	padding-bottom: 36px;
+	padding-left: 310px;
+	padding-right: 310px;
 	
 }
 
@@ -195,6 +207,8 @@ input[type="radio"].visually-hidden {
 
 
 .reason-one {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 }
@@ -219,6 +233,8 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
     font-weight: 700;
     margin-top: 22px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .reason-one-reason p:nth-child(2) {
@@ -229,8 +245,23 @@ input[type="radio"].visually-hidden {
 	margin-top: 20px;
 }
 
+p.reason-one-reason-not {
+	padding-left: 55px;
+    padding-right: 55px;
+}
+
+p.reason-one-reason-yes {
+	padding-left: 40px;
+    padding-right: 40px;
+}
+
+
 .general-reasons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
   	padding: 0;
     list-style: none;
@@ -250,6 +281,13 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     margin-bottom: 25px;
     
+ }
+
+ p.recommend-living,
+ p.Always-order,
+ p.Not-only-Chinese {
+ 	padding-left: 50px;
+    padding-right: 50px;
  }
 
  p.icon-index-housing::before {
@@ -287,14 +325,20 @@ input[type="radio"].visually-hidden {
 
 
 .reason-two {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .last-reasons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	text-align: center;
 	padding-top: 48px;
-	padding-bottom: 62px;
+	padding-bottom: 57px;
 	background-color: #eeeeee;
 }
 
@@ -309,7 +353,8 @@ input[type="radio"].visually-hidden {
 .last-reasons p:nth-child(1) {
 	font-size: 21px;
     font-weight: 700;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
+    
 }
 
 .last-reasons p:nth-child(2) {
@@ -317,12 +362,52 @@ input[type="radio"].visually-hidden {
 }
 
 
+p.last-reasons-headline {
+	padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -1px;
+}
+
+p.last-reasons-reason1 {
+	padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+div.last-reasons-block2 {
+	padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -2px;
+}
+
+div.last-reasons-block3 {
+	padding-left: 25px;
+    padding-right: 25px;
+}
+
+p.last-reasons-headline2 {
+	margin-bottom: 25px;
+}
+
+p.last-reasons-headline2,
+p.last-reasons-headline3 {
+	padding-left: 115px;
+    padding-right: 115px;
+}
+
+p.last-reasons-reason2,
+p.last-reasons-reason3 {
+	padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 0px
+}
+
 /*form */
 
 .main-hotel-search {
 	position: relative;
 	text-align: center;
-	padding-top: 46px;
+	padding-top: 50px;
 }
 
 .main-hotel-search b {
@@ -378,12 +463,16 @@ form.hotel-search {
 
 
 .hotel-search div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font: inherit;
 	text-transform: uppercase;
     line-height: 26px;
     font-weight: 700;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .hotel-search input {
@@ -416,21 +505,33 @@ div.departure {
 
 
 div.choice {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 30px;
 }
 
 .adults,
 .children {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .adults-choice,
 .children-choice {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: #f2f2f2;
 }
 
@@ -466,7 +567,7 @@ div.children {
 
 .hotel-search input:active,
 .hotel-search input:focus {
-	border: 2px solid #e5e5e5;
+	/*border: 2px solid #e5e5e5;*/
 	background-color: transparent;
 }
 
@@ -497,7 +598,9 @@ div.children {
 	top: 19px;
 	left: 13px;
 	background-color: #a9a9a9;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 
@@ -597,8 +700,12 @@ button.button-search {
 /* footer */
 
 .main-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding-top: 35px;
 	padding-left: 133px;
 	padding-bottom: 35px;
@@ -619,13 +726,17 @@ button.button-search {
 }
 
 .footer-social-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	
 	margin: 0;
 	padding: 0;
 	width: 151px;
 	margin-left: 26px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 
@@ -639,9 +750,15 @@ button.button-search {
 }
 
 .social-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
   	background-color: #81b3d2;
   	width: 46px;
   	height: 48px;
@@ -660,6 +777,8 @@ button.button-search {
 .social-button:focus path,
 .social-button:active path {
 	fill: #88b6d1;
+	-webkit-transition: 1s all;
+	-o-transition: 1s all;
 	transition: 1s all;
 }
 
@@ -676,8 +795,12 @@ button.button-search {
 }
 
 .footer-copyright {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 210px;
 	height: 43px;
 }
@@ -688,7 +811,7 @@ button.button-search {
 
 a.logo-htmlacademy-small {
 	display: inline-block;
-
+	vertical-align: middle;
 }
 
 .logo-htmlacademy-small {
@@ -746,6 +869,8 @@ a.logo-htmlacademy-small {
 }
 
 .filter form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -784,6 +909,7 @@ a.logo-htmlacademy-small {
 .filter-transfer1,
 .filter-transfer2 {
 	display: inline-block;
+	vertical-align: middle;
 	cursor: pointer;
 	position: relative;
 	color: #ffffff;
@@ -875,12 +1001,14 @@ input:checked ~ .filter-transfer2::before {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
+  vertical-align: middle;
   font-size: 14px;
   line-height: 33px;
   vertical-align: top;
@@ -902,7 +1030,7 @@ input:checked ~ .filter-transfer2::before {
 .price-controls input {
   width: 50px;
   margin: 0;
-
+  height: 35px;
   color: inherit;
   font: inherit;
 
@@ -939,7 +1067,8 @@ input:checked ~ .filter-transfer2::before {
   background: #ababab;
   border: 10px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -981,6 +1110,8 @@ input:checked ~ .filter-transfer2::before {
 /* sort */
 
 .sorting {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 30px 72px;
 	border-bottom: 1px solid #e5e5e5;
@@ -996,11 +1127,18 @@ input:checked ~ .filter-transfer2::before {
 .found p {
 	margin: 0;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .sorting-links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 354px;
 	margin-left: 49px;
 	text-decoration: none;
@@ -1051,8 +1189,12 @@ input:checked ~ .filter-transfer2::before {
 
 .scroll-links {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	margin-left: auto;
@@ -1072,6 +1214,7 @@ input:checked ~ .filter-transfer2::before {
 
 .scroll-links a {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .active-scroll path {
@@ -1097,8 +1240,13 @@ input:checked ~ .filter-transfer2::before {
 
 
 .catalog-hotels-reservation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 0;
   	padding: 0;
     list-style: none;
@@ -1110,9 +1258,23 @@ input:checked ~ .filter-transfer2::before {
 .catalog-hotels-reservation-amara-resort,
 .catalog-hotels-reservation-Desert-Queil-Inn,
 .catalog-hotels-reservation-Villas-diablo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 25px 72px;
 	border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-hotels-reservation-amara-resort {
+	padding-bottom: 29px;
+}
+
+.catalog-hotels-reservation-Desert-Queil-Inn {
+	padding-bottom: 30px;
+}
+
+.catalog-hotels-reservation-Villas-diablo {
+	padding-bottom: 29px;
 }
 
 .amara-resort-info,
@@ -1129,7 +1291,9 @@ input:checked ~ .filter-transfer2::before {
 
 .hotels-img img {
 	display: inline-block;
-	margin-top: 5px;
+	vertical-align: middle;
+	margin-top: 4px;
+	width: 136px;
 }
 
 .hotels-rating {
@@ -1163,6 +1327,7 @@ h3.directory-header {
 
 a.button-more {
 	display: inline-block;
+	vertical-align: middle;
 	font: inherit;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -1177,6 +1342,7 @@ a.button-more {
 
  a.button-reserve{
  	display: inline-block;
+ 	vertical-align: middle;
  	font: inherit;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -1230,17 +1396,26 @@ a.button-reserve:focus {
 .buttons-Desert-Queil .button-reserve,
 .buttons-Villas-diablo .button-reserve {
 	margin-left: 2px;
+	margin-top: 12px;
 }
 
-
+.buttons-Villas-diablo {
+	margin-top: 2px;
+}
 
 
 .amara-resort-rating,
 .Desert-Queil-Inn-rating,
 .Villas-diablo-rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	
 	height: 20px;
 }
@@ -1275,10 +1450,19 @@ ul.Villas-diablo-rating {
 }
 
 .hotels-rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 ul.amara-resort-rating {
@@ -1295,6 +1479,7 @@ ul.Villas-diablo-rating {
 
 .hotels-rating-info {
 	display: inline-block;
+	vertical-align: middle;
 	padding-top: 5px;
 	width: 111px;
 	height: 28px;
@@ -1302,18 +1487,11 @@ ul.Villas-diablo-rating {
 	text-align: center;
 }
 
-.rating-info-amara {
-	margin-bottom: 7px;
-	padding-left: 3px;
-}
 
+.rating-info-amara,
 .rating-info-Desert,
 .rating-info-Villas {
-	margin-bottom: 8px;
+	margin-bottom: 1px;
 	padding-left: 3px;
 }
 
-.catalog-hotels-reservation-Desert-Queil-Inn,
-.catalog-hotels-reservation-Villas-diablo {
-	padding-bottom: 24px;
-}
